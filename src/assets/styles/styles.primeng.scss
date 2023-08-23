@@ -1,0 +1,102 @@
+:host ::ng-deep{
+    *{
+        box-shadow: none !important;
+    }
+    .p-tree.p-component{
+        padding: 0;
+        border: none;
+    }
+    .p-treenode{
+        padding: 0 !important;
+        .p-treenode-content{
+            padding: .4rem 1rem !important;
+        }
+    }
+    :focus{
+        box-shadow: none !important;
+    }
+    .w-30{
+        width: 30rem;
+    }
+    .input.p-filled ~ label{
+        font-size: 2rem
+    }
+    .p-inputswitch,
+    *:has(>.p-inputswitch){
+        height: 1.5rem;
+    }
+    .p-inputswitch-checked .p-inputswitch-slider,
+    .p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider{
+        background: #555;
+    }
+    *:has(>.p-divider){
+        width: 100%;
+        color: #555;
+    }
+    .p-dropdown{
+        width: 100%;
+        background: #f6f6f6;
+        border: none !important;
+        border-bottom: 1px solid #555 !important;
+        background: #f6f6f6 !important;
+        .p-inputtext{
+            padding: .6rem 1rem;
+        }
+    }
+    .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover{
+        border-color: #555;
+    }
+    .p-checkbox-box.p-highlight,
+    .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover{
+        border-color: #555;
+        background: #555;
+    }
+    .drop-min{
+        width: min-content !important;
+        .p-dropdown{
+            width: min-content;
+            border-top-right-radius: 0; 
+            border-bottom-right-radius: 0;
+        }
+        .p-dropdown-trigger{
+            display: none;
+        }
+    }
+    .p-float-label input:focus ~ label, .p-float-label input.p-filled ~ label,
+    .p-float-label textarea:focus ~ label, .p-float-label textarea.p-filled ~ label,
+    .p-float-label .p-inputwrapper-focus ~ label, .p-float-label .p-inputwrapper-filled ~ label{
+        font-size: .9rem
+    }
+    .p-editor-container{
+        margin-top: 1rem;
+    }
+    .p-multiselect{
+        width: 100%;
+        background: #f6f6f6;
+        border: none !important;
+        border-bottom: 1px solid #555 !important;
+        .p-multiselect-label{
+            padding: .6rem 1rem;
+        }
+    }
+    .p-inputtext:enabled:hover,
+    .p-inputtext:enabled:focus{
+        border-color: #555;
+    }
+    .p-datepicker table td{
+        padding: 0;
+    }
+
+
+    // ///////////////////////////////
+    .p-progressbar{
+        height: 1.2rem;
+        background: #f6f6f6;
+        border: none !important;
+        border-bottom: 1px solid #555 !important;
+        background: #f6f6f6 !important;
+        .p-progressbar-value{
+            background: #555;
+        }
+    }
+}

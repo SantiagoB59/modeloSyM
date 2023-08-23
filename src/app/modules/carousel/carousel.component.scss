@@ -1,0 +1,27 @@
+.letra{
+         display: flex; 
+        color: #1d2326;
+        flex-direction: column;
+        align-content: stretch;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+.letra2{
+    display: flex;
+    color: #1d2326;
+    flex-direction: column-reverse;
+    align-content: stretch;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.mostrar{
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 2%;
+    background-color: #6c8c74;
+}
+.photo{
+    left: 250px;
+}

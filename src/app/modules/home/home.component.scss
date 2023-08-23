@@ -1,0 +1,38 @@
+@import "primeicons/primeicons.css";
+.redondo-galery{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #6c8c74;
+  }
+.redondo-camara{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #6c8c74;
+}
+.fondo{
+    background-color: aliceblue;
+}
+.botons{
+    display: flex;
+    margin-top: 50px;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.recomends{
+    display: flex;
+    margin-top: 50px;
+}
+
+.text{
+    color: #6c8c74;
+}
+h5{
+margin-left: 4rem;
+}
+
+

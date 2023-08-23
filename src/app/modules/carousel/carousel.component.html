@@ -1,0 +1,76 @@
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button (click)="indexActive = 0" 
+       type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button (click)="indexActive = 1" 
+       type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button (click)="indexActive = 2" 
+       type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item" [ngClass]="{'active': indexActive == 0}">
+        
+          <img src="assets/images/fondo1.jpeg" height="560px" class="d-block w-100" alt="...">
+      
+          <div class="carousel-caption d-md-block letra">
+          <br><br>
+          <h1>Tu jardin</h1>
+          <h5>Sano y hermoso</h5>
+          <p>con nuestra ayuda.</p>
+          <button type="button" class="btn btn-secondary mostrar">
+            <i class="pi pi-plus-circle" style="font-size: 1.5rem;"> Examinar</i>
+        </button>
+        <span class="photo">
+          <img  src="assets/images/carrousel1.png" width="60%" alt="">
+        </span>
+          
+        </div>
+      </div>
+
+      <div class="carousel-item" [ngClass]="{'active': indexActive == 1}">
+        <img src="assets/images/fondo1.jpeg" height="560px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block letra2">
+          <h1>Plagas</h1>
+          <p>Deteccion de plagas</p>
+          <img src="assets/images/carrousel2.png" width="100%" alt="">
+        </div>
+      </div>
+      <div class="carousel-item" [ngClass]="{'active': indexActive == 1}">
+        <img src="assets/images/fondo1.jpeg" height="560px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block letra2">
+          <button type="button" class="btn btn-secondary mostrar">
+            <i class="pi pi-plus-circle" style="font-size: 1.5rem;"> Examinar</i>
+        </button>
+          <h1>Plagas</h1>
+          <p>Deteccion de plagas</p>
+          <img src="assets/images/carrousel2.png" width="100%" alt="">
+        </div>
+      </div>
+      <div class="carousel-item" [ngClass]="{'active': indexActive == 2}">
+        <img src="assets/images/fondo1.jpeg" height="560px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block letra2">
+          <button type="button" class="btn btn-secondary mostrar">
+            <i class="pi pi-plus-circle" style="font-size: 1.5rem;"> Examinar</i>
+        </button>
+          <h1>Plantas</h1>
+          <p>Informacion Util para tus</p>
+          <img src="assets/images/carrousel3.png" width="100%" alt="">
+        </div>
+      </div>
+    </div>
+    <button (click)="indexActive = indexActive==2? 0: indexActive+1" 
+     class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button (click)="indexActive = indexActive==0? 2: indexActive-1" 
+     class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  
+
